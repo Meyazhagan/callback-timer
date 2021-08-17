@@ -1,0 +1,54 @@
+.main-container {
+  display: flex;
+  height: 90vh;
+  justify-content: center;
+  align-items: center;
+  font-family: "Style Script", cursive;
+}
+
+.count,
+.message {
+  color: #ffffff;
+  z-index: 100;
+  font-size: 80px;
+  animation: scale 0.5s;
+  transform: scale(3);
+}
+
+.message {
+  animation: scale 1s;
+  transform: scale(3);
+}
+
+@keyframes scale {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(3);
+  }
+}
+
+canvas {
+  background-color: #000000;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  z-index: -100;
+  width: 100vw;
+  height: 100vh;
+}
+
+/* .message {
+  font-size: 80px;
+  animation: scale1 1s;
+}
+
+@keyframes scale1 {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1);
+  }
+} */
