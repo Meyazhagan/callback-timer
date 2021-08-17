@@ -244,4 +244,3 @@ function firework() {
   controller.init();
   requestAnimationFrame(controller.animation);
 }
-// setTimeout(firework, 100);

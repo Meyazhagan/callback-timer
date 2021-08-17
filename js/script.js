@@ -1,28 +1,31 @@
-function timer() {
+const mainContainer = document.querySelector(".main-container");
+
+setTimeout(() => {
   setTimeout(() => {
-    setValue(10);
+    mainContainer.innerHTML = `<p class="count">10<p>`;
     setTimeout(() => {
-      setValue(9);
+      mainContainer.innerHTML = `<p class="count">9<p>`;
       setTimeout(() => {
-        setValue(8);
+        mainContainer.innerHTML = `<p class="count">8<p>`;
         setTimeout(() => {
-          setValue(7);
+          mainContainer.innerHTML = `<p class="count">7<p>`;
           setTimeout(() => {
-            setValue(6);
+            mainContainer.innerHTML = `<p class="count">6<p>`;
             setTimeout(() => {
-              setValue(5);
+              mainContainer.innerHTML = `<p class="count">5<p>`;
               setTimeout(() => {
-                setValue(4);
+                mainContainer.innerHTML = `<p class="count">4<p>`;
                 setTimeout(() => {
-                  setValue(3);
+                  mainContainer.innerHTML = `<p class="count">3<p>`;
                   setTimeout(() => {
-                    setValue(2);
+                    mainContainer.innerHTML = `<p class="count">2<p>`;
                     setTimeout(() => {
-                      setValue(1);
+                      mainContainer.innerHTML = `<p class="count">1<p>`;
                       setTimeout(() => {
-                        setValue(0);
+                        mainContainer.innerHTML = `<p class="count">0<p>`;
                         setTimeout(() => {
-                          setValue("Happy Independence Day");
+                          firework();
+                          mainContainer.innerHTML = `<p class="message">Happy Independence Day<p>`;
                         }, 1000);
                       }, 1000);
                     }, 1000);
@@ -35,16 +38,4 @@ function timer() {
       }, 1000);
     }, 1000);
   }, 1000);
-}
-
-function setValue(value) {
-  const mainContainer = document.querySelector(".main-container");
-  if (value === "Happy Independence Day") {
-    firework();
-    mainContainer.innerHTML = `<p class="message">${value}<p>`;
-    return;
-  }
-  mainContainer.innerHTML = `<p class="count">${value}<p>`;
-}
-
-timer();
+}, 100);
