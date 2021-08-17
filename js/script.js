@@ -22,7 +22,7 @@ function timer() {
                       setTimeout(() => {
                         setValue(0);
                         setTimeout(() => {
-                          setValue("Happy New Year");
+                          setValue("Happy Independence Day");
                         }, 1000);
                       }, 1000);
                     }, 1000);
@@ -39,7 +39,7 @@ function timer() {
 
 function setValue(value) {
   const mainContainer = document.querySelector(".main-container");
-  if (value === "Happy New Year") {
+  if (value === "Happy Independence Day") {
     firework();
     mainContainer.innerHTML = `<p class="message">${value}<p>`;
     return;
