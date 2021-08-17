@@ -1,9 +1,10 @@
 .main-container {
   display: flex;
-  height: 90vh;
+  height: 95vh;
   justify-content: center;
   align-items: center;
-  font-family: "Style Script", cursive;
+  font-family: Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+    sans-serif;
 }
 
 .count,
@@ -11,13 +12,18 @@
   color: #ffffff;
   z-index: 100;
   font-size: 80px;
+}
+
+.count {
+  font-family: "Exo", sans-serif;
   animation: scale 0.5s;
-  transform: scale(3);
+  transform: scale(4);
 }
 
 .message {
-  animation: scale 1s;
-  transform: scale(3);
+  animation: scale1 1s;
+  transform: scale(2);
+  font-family: "Style Script", cursive;
 }
 
 @keyframes scale {
@@ -25,7 +31,16 @@
     transform: scale(0);
   }
   to {
-    transform: scale(3);
+    transform: scale(4);
+  }
+}
+
+@keyframes scale1 {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(2);
   }
 }
 
